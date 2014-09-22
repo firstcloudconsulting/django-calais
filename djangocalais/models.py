@@ -8,7 +8,7 @@ from djangocalais.fields import PickledObjectField
 from djangocalais.calaisapi import OpenCalais
 
 
-CONTENT_FIELDS = (models.CharField, models.TextField, models.XMLField)
+CONTENT_FIELDS = (models.CharField, models.TextField, models.TextField)
 
 def is_content_field(obj, field_name):
     opts = obj._meta
